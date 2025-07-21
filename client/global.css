@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Tailwind CSS theme
+   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
+   * A different format will require also updating the theme in tailwind.config.ts.
+  */
+  :root {
+    --background: 35 25% 97%;
+    --foreground: 25 15% 12%;
+
+    --card: 35 25% 98%;
+    --card-foreground: 25 15% 12%;
+
+    --popover: 35 25% 98%;
+    --popover-foreground: 25 15% 12%;
+
+    --primary: 25 40% 35%;
+    --primary-foreground: 35 25% 98%;
+
+    --secondary: 35 15% 92%;
+    --secondary-foreground: 25 15% 12%;
+
+    --muted: 35 15% 92%;
+    --muted-foreground: 25 8% 45%;
+
+    --accent: 30 45% 45%;
+    --accent-foreground: 25 15% 12%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 35 25% 98%;
+
+    --border: 35 12% 88%;
+    --input: 35 12% 88%;
+    --ring: 25 40% 35%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 35 20% 96%;
+    --sidebar-foreground: 25 15% 25%;
+    --sidebar-primary: 25 40% 35%;
+    --sidebar-primary-foreground: 35 25% 98%;
+    --sidebar-accent: 35 12% 90%;
+    --sidebar-accent-foreground: 25 15% 12%;
+    --sidebar-border: 35 12% 85%;
+    --sidebar-ring: 25 40% 35%;
+
+    /* Restaurant brand colors */
+    --orange: 25 40% 35%;
+    --orange-light: 30 35% 50%;
+    --orange-dark: 20 45% 25%;
+    --cream: 45 35% 95%;
+    --brown: 25 25% 25%;
+    --brown-light: 30 20% 40%;
+    --warm-gray: 35 8% 85%;
+  }
+
+  .dark {
+    --background: 25 20% 8%;
+    --foreground: 35 25% 95%;
+
+    --card: 25 20% 10%;
+    --card-foreground: 35 25% 95%;
+
+    --popover: 25 20% 10%;
+    --popover-foreground: 35 25% 95%;
+
+    --primary: 30 35% 50%;
+    --primary-foreground: 25 20% 8%;
+
+    --secondary: 25 15% 18%;
+    --secondary-foreground: 35 25% 95%;
+
+    --muted: 25 15% 18%;
+    --muted-foreground: 35 8% 65%;
+
+    --accent: 35 40% 55%;
+    --accent-foreground: 25 20% 8%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 35 25% 95%;
+
+    --border: 25 15% 20%;
+    --input: 25 15% 20%;
+    --ring: 30 35% 50%;
+    --sidebar-background: 25 20% 12%;
+    --sidebar-foreground: 35 20% 85%;
+    --sidebar-primary: 30 35% 50%;
+    --sidebar-primary-foreground: 25 20% 8%;
+    --sidebar-accent: 25 15% 20%;
+    --sidebar-accent-foreground: 35 25% 95%;
+    --sidebar-border: 25 15% 25%;
+    --sidebar-ring: 30 35% 50%;
+
+    /* Restaurant brand colors for dark mode */
+    --orange: 30 35% 50%;
+    --orange-light: 35 30% 60%;
+    --orange-dark: 25 40% 35%;
+    --cream: 45 15% 15%;
+    --brown: 25 20% 85%;
+    --brown-light: 30 15% 70%;
+    --warm-gray: 35 8% 25%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
